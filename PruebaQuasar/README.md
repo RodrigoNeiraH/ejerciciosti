@@ -1,6 +1,6 @@
-# Quasar App (pruebaquasar)
+# Mi App (pruebaquasar)
 
-A Quasar Project
+proyecto de prueba 
 
 ## Install the dependencies
 ```bash
@@ -20,6 +20,14 @@ quasar dev
 yarn lint
 # or
 npm run lint
+```
+
+
+### Format the files
+```bash
+yarn format
+# or
+npm run format
 ```
 
 

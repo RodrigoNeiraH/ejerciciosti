@@ -5,5 +5,5 @@
 <script setup>
 defineOptions({
   name: 'App'
-})
+});
 </script>

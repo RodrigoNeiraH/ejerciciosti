@@ -53,7 +53,7 @@ defineOptions({
 const linksList = [
   {
     title: "HolaMundo",
-    caption: "Primeros Ejercicos",
+    caption: "Primeros Ejercicos y comprobacion de otros",
     icon: "school",
     link: "holamundo",
   },

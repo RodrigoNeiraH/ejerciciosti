@@ -35,6 +35,7 @@ function Modificar() {
   nombre.value = "libreta de notas ABC";
   direccion.value.ciudad = "Santiago";
 }
+
 </script>
 
 <style lang="scss" scoped></style>

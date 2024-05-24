@@ -1,7 +1,8 @@
 <template>
   <div>
     <h6>Propiedasdes computadas</h6>
-     es un metodo que se realiza sobre cierta data y que devuielve un valor y que son reactivas
+    es un metodo que se realiza sobre cierta data y que devuielve un valor y que
+    son reactivas
     <q-input v-model="nuevaTarea"></q-input>
     <p></p>
     <q-btn label="agregar" color="primary" @click="agregar"></q-btn>
@@ -9,7 +10,11 @@
     <!--utilizacion de vfor en array de listas-->
     <ul>
       <!-- reenderizando sobre propiedad tareasPendientes -->
-      <li v-for="(item, key) in tareasPendientes" :key="key">
+      <li
+        v-for="(item, key) in tareasPendientes"
+        :key="key"
+        :class="{ 'bg-grey': esPar(key) }"
+      >
         {{ item.nombre }}-{{ item.hecho }}
         <q-btn
           color="red"
@@ -45,7 +50,8 @@ const cuentaTerminadas = computed(() => {
   let conta = 0;
   //recorriendo arreglo con foreach y contando
   tareas.value.forEach((item) => {
-    if (item.hecho) {//esto es lo miso que decir if(item.hecho==true)
+    if (item.hecho) {
+      //esto es lo miso que decir if(item.hecho==true)
       conta++;
     }
   });
@@ -71,7 +77,14 @@ function eliminar(tarea) {
   console.log(tarea);
   //se agrega filtro para saber que tarea eliminar cuando item sea diferente de tarea
   tareas.value = tareas.value.filter((item) => item != tarea);
+
+  //aplicacion de estilo en base a funcion
+
 }
+ function esPar(numero) {
+    //retorno numero mod 2 es verdsdeo o falso
+    return numero % 2 == 0;
+  }
 </script>
 
 <style lang="scss" scoped></style>

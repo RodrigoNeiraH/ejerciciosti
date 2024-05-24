@@ -10,9 +10,16 @@
           aria-label="Menu"
           @click="toggleLeftDrawer"
         />
+         <q-btn
+          flat
+          dense
+          round
+          icon="home"
+          aria-label="home"
+          to="/home"
+        />
 
-        <q-toolbar-title> HOLA MUNDO </q-toolbar-title>
-
+        <q-toolbar-title> Quasar App </q-toolbar-title>
         <div>Quasar v{{ $q.version }}</div>
       </q-toolbar>
     </q-header>
@@ -30,7 +37,6 @@
     </q-drawer>
 
     <q-page-container>
-      <!--aqui se muestran la spaginas renderizadas-->
       <router-view />
     </q-page-container>
   </q-layout>
@@ -46,28 +52,29 @@ defineOptions({
 
 const linksList = [
   {
-    title: "Docs",
-    caption: "quasar.dev",
+    title: "HolaMundo",
+    caption: "Primeros Ejercicos",
     icon: "school",
-    link: "https://quasar.dev",
+    link: "holamundo",
+  },
+   {
+    title: "reactividad en Arrays y V-for",
+    caption: "estudio de propiedad de reactividad",
+    icon: "school",
+    link: "reactividadenarrays",
   },
   {
-    title: "Github",
-    caption: "github.com/quasarframework",
-    icon: "code",
-    link: "https://github.com/quasarframework",
+    title: "Propiedades Computadas",
+    caption: "estudio de propiedades computadas",
+    icon: "school",
+    link: "propiedadescomputadas",
   },
+
   {
-    title: "Discord Chat Channel",
-    caption: "chat.quasar.dev",
-    icon: "chat",
-    link: "https://chat.quasar.dev",
-  },
-  {
-    title: "Forum",
-    caption: "forum.quasar.dev",
-    icon: "record_voice_over",
-    link: "https://forum.quasar.dev",
+    title: "Reactividad de Clases y Estilos",
+    caption: "ejercios de reactividad en clases y estilos",
+    icon: "school",
+    link: "clasesyestilos",
   },
   {
     title: "Twitter",
@@ -86,12 +93,6 @@ const linksList = [
     caption: "Community Quasar projects",
     icon: "favorite",
     link: "https://awesome.quasar.dev",
-  },
-  {
-    title: "Hola Mundo",
-    caption: "layout con ejrcicios",
-    icon: "quasar",
-    link: "#/holamundo",
   },
 ];
 

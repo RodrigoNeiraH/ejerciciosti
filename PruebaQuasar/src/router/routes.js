@@ -3,12 +3,12 @@ const routes = [
     path: "/",
     component: () => import("layouts/MainLayout.vue"),
     children: [
-      { path: "", component: () => import("pages/HolaMundoPage.vue") },
-      { path: "holamundo", component: () => import("pages/HolaMundoPage.vue") },
-      {
-        path: "Arreglos",
-        component: () => import("pages/ReactividadArreglosPage.vue"),
-      },
+      { path: "", component: () => import("pages/IndexPage.vue") },
+      { path: "home", component: () => import("pages/IndexPage.vue") },
+      { path: "holamundo", component:() => import ("pages/HolaMundoPage.vue")},
+      { path: "propiedadescomputadas", component: () =>import ("pages/propiedadesComputadaPage.vue")},
+      { path: "reactividadenarrays", component: ()=> import ("pages/ReactividadArreglosPage.vue")},
+      { path: "clasesyestilos", component: ()=> import ("pages/EstiloyClases.vue")}
     ],
   },
 

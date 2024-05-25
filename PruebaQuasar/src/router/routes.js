@@ -8,7 +8,10 @@ const routes = [
       { path: "holamundo", component:() => import ("pages/HolaMundoPage.vue")},
       { path: "propiedadescomputadas", component: () =>import ("pages/propiedadesComputadaPage.vue")},
       { path: "reactividadenarrays", component: ()=> import ("pages/ReactividadArreglosPage.vue")},
-      { path: "clasesyestilos", component: ()=> import ("pages/EstiloyClases.vue")}
+      { path: "clasesyestilos", component: ()=> import ("pages/EstiloyClases.vue")},
+      { path: "renderizadocondicional", component: () => import ("pages/IfShowPage.vue")},
+      { path: "manejoeventos", component:() => import ("pages/ManejodeEventosPage.vue")}
+
     ],
   },
 
